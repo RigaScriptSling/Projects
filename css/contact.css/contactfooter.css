@@ -1,0 +1,109 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-6) var(--space-4);
+  background-color: var(--bg-tertiary);
+  min-height: 200px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: var(--space-6);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-section {
+  flex: 1;
+  background: var(--bg-secondary);
+  padding: 60px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-fast);
+}
+
+.footer-section:hover {
+  transform: translateY(-2px);
+}
+
+.footer-section h3 {
+  color: var(--text-primary);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-3);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: var(--space-2);
+}
+
+.footer-section p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+  padding: 0;
+  background: transparent;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-2);
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.social-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+.footer-signature {
+  padding: var(--space-4) var(--space-6);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-medium);
+  font-size: var(--text-sm);
+  text-align: center;
+  color: var(--text-muted);
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border-top: 2px solid var(--primary-color);
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .footer-section {
+    padding: var(--space-4);
+  }
+
+  .footer-signature {
+    padding: var(--space-3) var(--space-4);
+  }
+}

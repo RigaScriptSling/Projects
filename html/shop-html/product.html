@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product detail page - ISON" />
+    <link rel="stylesheet" href="/css/index.css/root.css" />
+    <link rel="stylesheet" href="/css/shop.css/product.css" />
+    <title>Product Detail - ISON</title>
+    <script type="module" src="../js/product.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header-container">
+      <div class="backbutton">
+        <button id="backbutton">&lt;</button>
+      </div>
+      <div class="logo">iSON★</div>
+      <div class="locale-section">
+        <div class="locale-options">
+          <div class="locale-item">
+            <select name="language" id="language-select">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="it">Italiano</option>
+              <option value="pt">Português</option>
+              <option value="zh">中文</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+          <div class="locale-item">
+            <select name="currency" id="currency-select">
+              <option value="USD">$ USD</option>
+              <option value="EUR">€ EUR</option>
+              <option value="GBP">£ GBP</option>
+              <option value="JPY">¥ JPY</option>
+              <option value="CAD">$ CAD</option>
+              <option value="AUD">$ AUD</option>
+              <option value="CHF">CHF</option>
+              <option value="CNY">¥ CNY</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Product Container -->
+    <main class="product-container">
+      <!-- Image Gallery Section (Left) -->
+      <div class="product-gallery">
+        <div class="main-image-wrapper">
+          <img
+            id="mainProductImage"
+            src=""
+            alt="Product"
+            class="main-product-image"
+          />
+          <div class="image-badge" id="imageBadge"></div>
+        </div>
+
+        <!-- Thumbnail Gallery -->
+        <div class="thumbnail-gallery" id="thumbnailGallery">
+          <!-- Thumbnails will be dynamically added here -->
+        </div>
+      </div>
+
+      <!-- Product Details Section (Right) -->
+      <div class="product-details">
+        <!-- Product Header Info -->
+        <div class="product-header">
+          <h1 id="productName" class="product-title">Product Name</h1>
+          <div class="product-rating">
+            <span id="productStars" class="stars">★★★★★</span>
+            <span id="productReviewCount" class="review-count"
+              >(125 reviews)</span
+            >
+          </div>
+          <div class="product-price-section">
+            <span id="productPrice" class="product-price">$0.00</span>
+            <span id="originalPrice" class="original-price"></span>
+            <span id="discount" class="discount-badge"></span>
+          </div>
+          <p id="stockStatus" class="stock-status">In Stock</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="product-tabs">
+          <button class="tab-button active" data-tab="details">Details</button>
+          <button class="tab-button" data-tab="reviews">Reviews</button>
+          <button class="tab-button" data-tab="specifications">
+            Specifications
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+          <!-- Details Tab -->
+          <div id="details" class="tab-pane active">
+            <div class="description-box">
+              <h3>Description</h3>
+              <p id="productDescription">
+                Product description will appear here.
+              </p>
+            </div>
+
+            <div class="features-box">
+              <h3>Key Features</h3>
+              <ul id="productFeatures" class="features-list">
+                <!-- Features will be dynamically added here -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Reviews Tab -->
+          <div id="reviews" class="tab-pane">
+            <div class="reviews-container" id="reviewsContainer">
+              <!-- Reviews will be dynamically added here -->
+            </div>
+          </div>
+
+          <!-- Specifications Tab -->
+          <div id="specifications" class="tab-pane">
+            <div class="specs-table" id="specsTable">
+              <!-- Specifications will be dynamically added here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantity & Action Buttons -->
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <label for="quantityInput">Quantity:</label>
+            <div class="quantity-control">
+              <button class="qty-btn" id="decreaseQty">−</button>
+              <input
+                type="number"
+                id="quantityInput"
+                class="qty-input"
+                value="1"
+                min="1"
+              />
+              <button class="qty-btn" id="increaseQty">+</button>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button id="addToCartBtn" class="btn-primary">Add to Cart</button>
+            <button id="wishlistBtn" class="btn-secondary">♡ Wishlist</button>
+          </div>
+
+          <div class="product-utilities">
+            <button id="shareBtn" class="utility-btn">⎙ Share</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+      <h2>You Might Also Like</h2>
+      <div class="related-grid" id="relatedProductsGrid">
+        <!-- Related products will be dynamically added here -->
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>

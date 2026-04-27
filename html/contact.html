@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your website description here" />
+    <title>ISON</title>
+    <link rel="stylesheet" href="../css/index.css/root.css" />
+    <link rel="stylesheet" href="../css/index.css/header.css" />
+    <link rel="stylesheet" href="../css/contact.css/contact.css" />
+    <link rel="stylesheet" href="../css/contact.css/contactfooter.css" />
+    <link rel="stylesheet" href="../css/contact.css/response.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="top-section">
+          <div class="social-section">
+            <div class="socials">
+              <div class="social-item">
+                <a href=""
+                  ><img src="/assets/icons/icons8-facebook-50.png" alt=""
+                /></a>
+              </div>
+              <div class="social-item">
+                <a href="#twitter"
+                  ><img src="/assets/icons/icons8-linkedin-50.png" alt=""
+                /></a>
+              </div>
+              <div class="social-item">
+                <a href="#instagram"
+                  ><img src="/assets/icons/icons8-instagram-50.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="locale-section">
+            <div class="locale-options">
+              <div class="locale-item">
+                <select name="language" id="language-select">
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutsch</option>
+                  <option value="it">Italiano</option>
+                  <option value="pt">Português</option>
+                  <option value="zh">中文</option>
+                  <option value="ja">日本語</option>
+                </select>
+              </div>
+              <div class="locale-item">
+                <select name="currency" id="currency-select">
+                  <option value="USD">$ USD</option>
+                  <option value="EUR">€ EUR</option>
+                  <option value="GBP">£ GBP</option>
+                  <option value="JPY">¥ JPY</option>
+                  <option value="CAD">$ CAD</option>
+                  <option value="AUD">$ AUD</option>
+                  <option value="CHF">CHF</option>
+                  <option value="CNY">¥ CNY</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="logo-section">
+            <div class="logo">
+              <h1>iSON★</h1>
+            </div>
+          </div>
+        </div>
+        <div class="nav-section">
+          <nav>
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="shop-html/shop.html">Shop</a>
+              <a href="about.html">About</a>
+              <a href="services.html">Services</a>
+              <a href="contact.html">Contact</a>
+              <img
+                class="account-icon"
+                src="/assets/icons/user.png"
+                alt="login"
+              />
+              <a href="cart.html" style="text-decoration: none">
+                <div class="cart-wrapper">
+                  <img
+                    class="cart-icon"
+                    src="../assets/icons/grocery-store.png"
+                    alt="cart"
+                  />
+                  <span id="cart-count">0</span>
+                </div>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="contact-header">
+        <h1>Contact iSON★</h1>
+        <p>
+          We're here to help! Get in touch with us for any questions about our
+          products, services, or to discuss your specific needs.
+        </p>
+      </section>
+
+      <div class="contact-container">
+        <section class="contact-form-section">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="electronics">Electronics Support</option>
+                <option value="furniture">Furniture Questions</option>
+                <option value="footwear">Footwear Assistance</option>
+                <option value="delivery">Delivery & Installation</option>
+                <option value="warranty">Warranty Claims</option>
+                <option value="returns">Returns & Exchanges</option>
+                <option value="partnership">Business Partnership</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                placeholder="Tell us how we can help you..."
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" />
+                <span class="checkmark"></span>
+                Subscribe to our newsletter for updates and special offers
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </section>
+
+        <section class="contact-info-section">
+          <h2>Get in Touch</h2>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <h3>Phone Support</h3>
+              <p><strong>Customer Service:</strong></p>
+              <p>+1 (555) 123-4567</p>
+              <p><strong>Sales Department:</strong></p>
+              <p>+1 (555) 123-4568</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">✉️</div>
+              <h3>Email Us</h3>
+              <p><strong>General Inquiries:</strong></p>
+              <p>info@isonstore.com</p>
+              <p><strong>Support:</strong></p>
+              <p>support@isonstore.com</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <h3>Visit Our Store</h3>
+              <p><strong>Address:</strong></p>
+              <p>123 Commerce Street</p>
+              <p>Tech District, TC 12345</p>
+              <p>United States</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">🕒</div>
+              <h3>Business Hours</h3>
+              <p><strong>Monday - Friday:</strong></p>
+              <p>9:00 AM - 6:00 PM</p>
+              <p><strong>Saturday - Sunday:</strong></p>
+              <p>10:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+
+          <div class="emergency-contact">
+            <h3>24/7 Emergency Support</h3>
+            <p>
+              For urgent technical issues with electronics or emergency
+              furniture delivery concerns:
+            </p>
+            <p class="emergency-number">📞 +1 (555) 911-HELP</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>What is your return policy?</h3>
+            <p>
+              We offer a 30-day return policy for all unused items in original
+              packaging. Electronics have a 14-day return window.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you offer installation services?</h3>
+            <p>
+              Yes! We provide professional installation services for furniture
+              and setup services for electronics. Contact us for pricing.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What payment methods do you accept?</h3>
+            <p>
+              We accept all major credit cards, PayPal, Apple Pay, Google Pay,
+              and offer financing options for larger purchases.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How long does delivery take?</h3>
+            <p>
+              Standard delivery takes 3-5 business days. Express delivery
+              available for next-day service in major metropolitan areas.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="shop-html/shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Care</h3>
+          <ul class="footer-links">
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-signature">
+        <small>&copy; 2025 iSON★ By Rigas Studios</small>
+      </div>
+    </footer>
+  </body>
+</html>
